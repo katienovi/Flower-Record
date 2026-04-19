@@ -82,12 +82,24 @@ async function removeFlower(req, res) {
     }
 }
 
+async function getFlowerForm(req, res){
+    try  {
+        res.render("new-flower-form", { title: "Add a Flower"})
+    }
+    catch (err){
+        console.error(err);
+        res.status(500).send("Server error")
+    }
+}
+
+
 module.exports = {
     fetchAllFlowers,
     fetchFlowerByID,
     fetchFlowerByLocation,
     createFlower,
-    removeFlower
+    removeFlower,
+    getFlowerForm
 }
 
 
