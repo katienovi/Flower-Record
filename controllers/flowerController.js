@@ -4,7 +4,8 @@ const model = require('../models/flowerModel');
 async function fetchAllFlowers(req, res){
     try {
         const flowers = await model.getAllFlowers();
-        res.json(flowers);
+        //res.json(flowers);
+        res.render("landing", {title: "All Flowers", flowers: flowers})
     }
     catch (err){
         console.error(err);
@@ -37,7 +38,8 @@ async function fetchFlowerByLocation(req, res){
         return res.status(404).send("Flowers not found or your location does not exist!");
     }
 
-    res.json(flowers);
+    //res.json(flowers);
+    res.render("locations", {title: "Flowers by location", locationsList: flowers})
     
     }
     catch (err){

@@ -1,0 +1,19 @@
+<%- include('./partials/navbar') %>
+ <div id="root">
+            <div class="card-wrapper">
+                 <% locationsList.forEach((flower)=> { %>
+                                <div class="card">
+                                    <div class="container">
+                                        <h4><b><%= flower.name %></b></h4> 
+                                        <h4>Entry #<%= flower.id %></h4>
+                                        <h6>Location: <%= flower.location %></h6> 
+                                        <p><%= flower.description %></p>
+                                    </div>
+                                </div>
+                            <% }) %>
+            </div>
+
+            </div>
+
+    </body>
+</html>
