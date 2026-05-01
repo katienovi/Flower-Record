@@ -21,5 +21,12 @@
                 <img src="/Images/magnifying-glass.png" alt="search button" />
             </button>
         </div>
+          <% if(typeof user!='undefined' ){ %>
+            <li>
+                <a href="/auth/logout">(<%= user.emails[0].value %>) Logout</a>
+            </li>
+            <% } else{ %>
+                <li><a href="/auth/google">Sign in With Google</a></li>
+                <% } %>
     </ul>
 

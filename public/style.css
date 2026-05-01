@@ -4,6 +4,7 @@ body{
     padding: 0;
 }
 
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -97,15 +98,48 @@ h6 {
   align-items: center;
 }
 
+.container {
+  padding: 2px 16px;
+}
+
 .desc-area{
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+.login{
+  display: flex;
+  background-color: #FEFCF5;
+}
 
-.container {
-  padding: 2px 16px;
+.login p{
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:xx-large;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+.login-card{
+  display: flex;
+  background-color: #E8F0FA;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;       
+  padding: 20px;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+
+.card-right{
+  display: flex;
+  flex-direction: column;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #flower-img {
@@ -164,6 +198,25 @@ h6 {
   border: 2px solid #d74c44;
   background-color: #d74c44;
 }
+
+#login-image{
+  height: 100vh;
+  width: 500px;
+}
+
+#sign-in{
+  border-radius: 20px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid  #FFD7E3;
+  background-color: #FFD7E3;
+  margin-top: 20px;
+  margin-left: 130px;
+  text-decoration: none;
+  color: black;
+}
+
 
 
 

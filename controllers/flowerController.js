@@ -5,7 +5,7 @@ async function fetchAllFlowers(req, res){
     try {
         const flowers = await model.getAllFlowers();
         //res.json(flowers);
-        res.render("landing", {title: "All Flowers", flowers: flowers})
+        res.render("landing", {title: "All Flowers", flowers: flowers,  user: req.user })
     }
     catch (err){
         console.error(err);
@@ -39,7 +39,7 @@ async function fetchFlowerByLocation(req, res){
     }
 
     //res.json(flowers);
-    res.render("locations", {title: "Flowers by location", locationsList: flowers})
+    res.render("locations", {title: "Flowers by location", locationsList: flowers,  user: req.user})
     
     }
     catch (err){
@@ -84,7 +84,7 @@ async function removeFlower(req, res) {
 
 async function getFlowerForm(req, res){
     try  {
-        res.render("new-flower-form", { title: "Add a Flower"})
+        res.render("new-flower-form", { title: "Add a Flower",  user: req.user })
     }
     catch (err){
         console.error(err);
