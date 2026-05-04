@@ -30,6 +30,9 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/auth', require('./auth/authRoute'));
 app.use('/flowers', flowerRoutes);
 
+app.get("/", (req, res) => {
+    res.redirect('/flowers')
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
