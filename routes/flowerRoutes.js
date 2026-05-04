@@ -7,6 +7,7 @@ const flowerController = require('../controllers/flowerController');
 router.get("/",  ensureAuth, flowerController.fetchAllFlowers);
 router.get("/location/:location",  ensureAuth, flowerController.fetchFlowerByLocation);
 router.get("/new",  ensureAuth, flowerController.getFlowerForm);
+router.get("/outside", ensureAuth, flowerController.getOutsideInfo);
 router.get("/:id",  ensureAuth, flowerController.fetchFlowerByID);
 router.post("/",  ensureAuth, flowerController.createFlower);
 router.delete("/:id",  ensureAuth, flowerController.removeFlower);

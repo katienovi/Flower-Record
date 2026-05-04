@@ -9,6 +9,9 @@
                                         <h4>Entry #<%= flower.id %></h4>
                                         <h6>Location: <%= flower.location %></h6> 
                                         <p><%= flower.description %></p>
+                                        <button class="delete-btn" id="<%= flower.id %>">
+                                            <img id ="delete-img" src="/Images/delete-icon.png" alt="Delete">
+                                        </button>
                                     </div>
                                 </div>
                             <% }) %>

@@ -66,13 +66,21 @@ h6 {
 
 .card {
   display: flex;
-  background-color: #edafb8;
+  background-color: #ffcad4;
   border-radius: 15px;
   transition: 0.3s;
   width: 400px;
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 50px;
+}
+
+.outside-card{
+  display: flex;
+  background-color: #b0c4b1;
+  border-radius: 10px;
+  width: 500px;
+  height: 150px;
 }
 
 .card-form{
@@ -82,6 +90,18 @@ h6 {
   justify-content: center;
   padding: 20px;
 }
+
+.card-outside{
+  display: flex;
+  flex-direction: column;
+  background-color:#f6f3ea;
+  border-radius: 15px;
+  justify-content: baseline;
+  padding: 30px;
+  width: 100%;
+  height: 500px;
+}
+
 
 .card-wrapper {
   display: flex;
@@ -142,6 +162,21 @@ h6 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
+.delete-btn{
+  border-radius: 20px;
+  border: 2px solid #f08080;
+  background-color: #f08080;
+  width: 80px;
+  height: 30px;
+}
+
+#outside-header{
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 #flower-img {
   width: 200px;
   padding-left: 5px;
@@ -197,6 +232,19 @@ h6 {
 #cancel-btn{
   border: 2px solid #d74c44;
   background-color: #d74c44;
+}
+
+#uv-text, #temperature-text{
+  font-size: xx-large;
+}
+
+#delete-img{
+  width: 25px;
+}
+
+#sun-img{
+  width: 400px;
+  height: 300px;
 }
 
 #login-image{

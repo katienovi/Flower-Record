@@ -18,10 +18,10 @@ router.get(
   passport.authenticate("google", {
     scope: ['profile', 'email'],
     keepSessionInfo: true,
-    failureRedirect: "/",
+    failureRedirect: "/auth/login",
   }),
   (req, res) => {
-    res.redirect(req.session.returnTo);
+    res.redirect('/flowers');
   }
 );
 

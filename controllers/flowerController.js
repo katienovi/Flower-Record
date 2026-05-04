@@ -92,6 +92,16 @@ async function getFlowerForm(req, res){
     }
 }
 
+async function getOutsideInfo(req, res){
+    try {
+        res.render("outside-info", {title: "Outside Information", user: req.user})
+    }
+    catch (err){
+        console.error(err);
+        res.status(500).send("Server error")
+    }
+}
+
 
 module.exports = {
     fetchAllFlowers,
@@ -99,7 +109,8 @@ module.exports = {
     fetchFlowerByLocation,
     createFlower,
     removeFlower,
-    getFlowerForm
+    getFlowerForm,
+    getOutsideInfo
 }
 
 
